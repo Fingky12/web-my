@@ -72,7 +72,41 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// 🌗 Dark mode toggle
 function toggleDarkMode() {
   document.body.classList.toggle("dark");
 }
 
+// ✍️ Typing animation
+const teks = ["Selamat Datang", "Di Web-My", "Portofolio Developer"];
+let i = 0, j = 0, currentText = "", isDeleting = false;
+function ketik() {
+  const display = document.getElementById("type-text");
+  if (i < teks.length) {
+    currentText = teks[i];
+    if (isDeleting) {
+      display.innerText = currentText.substring(0, j--);
+      if (j < 0) {
+        isDeleting = false;
+        i = (i + 1) % teks.length;
+      }
+    } else {
+      display.innerText = currentText.substring(0, j++);
+      if (j === currentText.length + 1) {
+        isDeleting = true;
+        setTimeout(ketik, 800);
+        return;
+      }
+    }
+    setTimeout(ketik, 120);
+  }
+}
+if (document.getElementById("type-text")) ketik();
+
+// 🌫️ Scroll fade
+window.addEventListener("scroll", () => {
+  document.querySelectorAll(".scroll-fade").forEach(el => {
+    const posisi = el.getBoundingClientRect().top;
+    if (posisi < window.innerHeight - 100) el.classList.add("active");
+  });
+});
