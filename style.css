@@ -1,4 +1,4 @@
-/* Reset dasar 
+/* Reset dasar */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@ body {
   color: #333;
 }
 
-/* Navbar 
+/* Navbar */
 .navbar {
   background-color: #0d47a1;
   color: white;
@@ -44,7 +44,7 @@ body {
   color: #90caf9;
 }
 
-/* Hero Section /
+/* Hero Section */
 .hero-section {
   text-align: center;
   padding: 80px 20px;
@@ -98,7 +98,7 @@ body {
 }
 
 
-/* Footer /
+/* Footer */
 footer {
   background-color: #eeeeee;
   text-align: center;
@@ -107,7 +107,7 @@ footer {
   font-size: 14px;
 }
 
-/* Animasi /
+/* Animasi */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -120,7 +120,7 @@ footer {
   }
 }
 
-/* Responsive /
+/* Responsive */
 @media (max-width: 768px) {
   .nav-links {
     flex-direction: column;
