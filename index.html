@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Web-My</title>
+  <title>Beranda - Web-My</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
-<body class="index">
+<body class="beranda">
   <header class="navbar">
     <h1 class="logo">Web-My</h1>
     <nav>
       <ul class="nav-links">
-        <li><a href="index.html"><i class="fas fa-solid fa-house"></i></a></li>
+        <li><a href="index.html">Beranda</a></li>
         <li><a href="about.html">Tentang</a></li>
         <li><a href="project.html">Proyek</a></li>
         <li><a href="contact.html">Kontak</a></li>
@@ -20,26 +20,18 @@
     </nav>
   </header>
 
-  <section class="hero-section">
-    <h2>Selamat Datang di Web-My</h2>
-    <p>Website sederhana dengan desain modern dan responsif.</p>
-    <button onclick="sayHello()">Klik Saya</button>
-  </section>  
-<main class="main-content">
-    <section id="contact" class="contact-section">
-      <h3>Hubungi Kami</h3>
-      <form>
-        <input type="text" placeholder="Nama Anda" required />
-        <input type="email" placeholder="Email Anda" required />
-        <textarea placeholder="Pesan Anda" required></textarea>
-        <button type="submit">Kirim</button>
-      </form>
-    </section> 
- </main>
+  <!-- 🔥 Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>👋 Halo, Selamat Datang di Web-My!</h2>
+      <p>Situs portofolio dan projek buatan tangan sendiri 😎</p>
+      <a href="project.html" class="btn-demo">🔍 Lihat Proyek</a>
+    </div>
+    <div class="hero-img">
+      <img src="assets/hero.jpg" alt="Gambar Hero" />
+    </div>
+  </section>
 
-  <footer>
-    <p>© 2025 Web-My 411018801</p>
-  </footer>
-  <script src="script.js"></script>
+  <footer><p>© 2025 Web-My411018801</p></footer>
 </body>
 </html>

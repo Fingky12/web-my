@@ -35,7 +35,6 @@ body {
 
 .nav-links a {
   color: white;
-  display: flex;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
@@ -182,7 +181,6 @@ body {
 .nav-links a {
   color: white;
   text-decoration: none;
-  display: flex;
   font-weight: bold;
   transition: 0.3s;
 }
