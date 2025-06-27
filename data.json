@@ -3,18 +3,24 @@
     "judul": "Web Toko Online",
     "deskripsi": "Website sederhana untuk jualan online. Dibuat dengan HTML + CSS dasar.",
     "ikon": "fa-store",
-    "link": "#"
+    "link": "https://ongkystress.github.io/web-toko",
+    "kategori": "HTML",
+    "tahun": "2024"
   },
   {
     "judul": "Portofolio Developer",
     "deskripsi": "Portofolio statis yang menampilkan profil, skill, dan proyek.",
     "ikon": "fa-briefcase",
-    "link": "#"
+    "link": "https://ongkystress.github.io/portofolio",
+    "kategori": "HTML",
+    "tahun": "2025"
   },
   {
     "judul": "Web Blog",
     "deskripsi": "Rencana membangun blog pribadi menggunakan React + GitHub Pages.",
     "ikon": "fa-blog",
-    "link": "#"
+    "link": null,
+    "kategori": "React",
+    "tahun": "2025"
   }
 ]
