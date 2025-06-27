@@ -1,0 +1,359 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #0d47a1;
+  color: white;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #90caf9;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 80px 20px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.hero-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.hero-section button {
+  background-color: #1976d2;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero-section button:hover {
+  background-color: #1565c0;
+}
+
+/* Footer */
+footer {
+  background-color: #eeeeee;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+
+/*css upgrade*/
+
+
+
+:root {
+  --primary: #0d47a1;
+  --background: #ffffff;
+  --text: #333;
+}
+
+body.dark {
+  --background: #121212;
+  --text: #eeeeee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+.navbar {
+  background-color: var(--primary);
+  color: white;
+  padding: 15px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #90caf9;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.hero-section {
+  background: url('assets/hero.jpg') center/cover no-repeat;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  background-color: rgba(0,0,0,0.5);
+  padding: 20px;
+  border-radius: 10px;
+  animation: fadeIn 1s ease-in;
+}
+
+.main-content {
+  padding: 40px 10%;
+}
+
+body.proyek .judul-halaman {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.project-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  padding: 0 10%;
+}
+
+.project-card {
+  background: #f3e5f5;
+  border-left: 6px solid #7b1fa2;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  color: #4a148c;
+}
+
+.project-card p {
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.btn-demo {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #7b1fa2;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-demo:hover {
+  background-color: #4a148c;
+}
+
+.contact-section {
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-section h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form button {
+  background-color: var(--primary);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #1565c0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #eee;
+  margin-top: 40px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.wa-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.wa-button a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  background-color: #25d366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.wa-button a:hover {
+  background-color: #1ebd5b;
+}
+
+
+/* --- Tampilan halaman Beranda --- */
+body.index {
+  background: linear-gradient(to right, #e3f2fd, #ffffff);
+}
+
+/* --- Tampilan halaman Tentang --- */
+body.about {
+  background: linear-gradient(to right, #fff3e0, #ffffff);
+  color: #4e342e;
+}
+
+body.about .navbar {
+  background-color: #ff9800;
+}
+
+/* --- Tampilan halaman Proyek --- */
+body.project {
+  background: linear-gradient(to right, #ede7f6, #ffffff);
+  color: #4a148c;
+}
+
+body.project .navbar {
+  background-color: #7b1fa2;
+}
+
+/* --- Tampilan halaman Kontak --- */
+body.contact {
+  background: linear-gradient(to right, #e8f5e9, #ffffff);
+  color: #1b5e20;
+}
+
+body.contact .navbar {
+  background-color: #388e3c;
+}
+body.contact textarea {
+  background-color: #f1f8e9;
+  border: 1px solid #aed581;
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "judul": "Web Toko Online",
+    "deskripsi": "Website sederhana untuk jualan online. Dibuat dengan HTML + CSS dasar.",
+    "ikon": "fa-store",
+    "link": "#"
+  },
+  {
+    "judul": "Portofolio Developer",
+    "deskripsi": "Portofolio statis yang menampilkan profil, skill, dan proyek.",
+    "ikon": "fa-briefcase",
+    "link": "#"
+  },
+  {
+    "judul": "Web Blog",
+    "deskripsi": "Rencana membangun blog pribadi menggunakan React + GitHub Pages.",
+    "ikon": "fa-blog",
+    "link": "#"
+  }
+]

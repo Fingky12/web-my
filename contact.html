@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontak</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="contact">
+  <header class="navbar">
+    <h1 class="logo">Web-My</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="about.html">Tentang</a></li>
+        <li><a href="project.html">Proyek</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <h2>Form Contact</h2>
+    <form>
+      <input type="text" placeholder="Nama Anda" required />
+      <input type="email" placeholder="Email Anda" required />
+      <textarea placeholder="Pesan Anda" required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+	<!-- Tambahan di bawah tombol Kirim -->
+<div class="wa-button">
+  <a href="https://wa.me/6282264513231" onclick="kirimWhatsApp()" target="_blank">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
+    Kirim via WhatsApp
+  </a>
+</div>
+  </main>
+
+  <footer><p>© 2025 Web-My</p></footer>
+</body>
+</html>
