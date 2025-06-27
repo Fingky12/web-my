@@ -6,7 +6,6 @@
   <title>Proyek Saya</title>
   <link rel="stylesheet" href="style.css" />
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
 </head>
 <body class="project">
   <header class="navbar">
@@ -23,27 +22,36 @@
 
   <main class="main-content">
     <h2 class="judul-halaman">🚀 Proyek Saya</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>🛒 Web Toko Online</h3>
-        <p>Website sederhana untuk jualan online. Dibuat dengan HTML + CSS dasar. Desain bersih dan cocok untuk pemula.</p>
-        <a class="btn-demo" href="#" target="_blank">🔗 Lihat Demo</a>
-      </div>
-      <div class="project-card">
-        <h3>💼 Portofolio Developer</h3>
-        <p>Portofolio statis yang menampilkan profil, skill, dan proyek. Desain responsive dan mobile-friendly.</p>
-        <a class="btn-demo" href="#" target="_blank">🔗 Lihat Demo</a>
-      </div>
 
-      <div class="project-card">
-        <h3>📝 Web Blog</h3>
-        <p>Rencana membuat blog pribadi menggunakan React + GitHub Pages. Tema gelap dan navigasi animasi.</p>
-        <a class="btn-demo" href="#" target="_blank">🚧 Coming Soon</a>
+    <!-- 🔍 Search dan Filter -->
+    <div class="filter-bar">
+      <input type="text" id="search" placeholder="Cari proyek..." />
+      <div class="filter-buttons">
+        <button onclick="filterKategori('all')">Semua</button>
+        <button onclick="filterKategori('HTML')">HTML</button>
+        <button onclick="filterKategori('React')">React</button>
       </div>
+    </div>
+
+    <!-- 🧩 Kartu Proyek -->
+    <div class="project-grid" id="project-container">
+      <p>Memuat proyek...</p>
+    </div>
+
+    <!-- ➕ Form Tambah Proyek -->
+    <div class="form-tambah">
+      <h3>Tambah Proyek</h3>
+      <input type="text" id="judul" placeholder="Judul proyek" />
+      <input type="text" id="deskripsi" placeholder="Deskripsi singkat" />
+      <input type="text" id="ikon" placeholder="Font Awesome Icon (cth: fa-store)" />
+      <input type="text" id="kategori" placeholder="Kategori (HTML, React)" />
+      <input type="text" id="tahun" placeholder="Tahun (misal: 2025)" />
+      <input type="text" id="link" placeholder="Link demo (https://...)" />
+      <button onclick="tambahProyek()">Tambah</button>
     </div>
   </main>
 
-  <footer><p>© 2025 Web-My</p></footer>
+  <footer><p>© 2025 Web-My 411018801</p></footer>
   <script src="script.js"></script>
 </body>
 </html>
