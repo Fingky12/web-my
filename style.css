@@ -486,3 +486,45 @@ body.contact textarea {
     text-align: center;
   }
 }
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+.scroll-fade.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stats, .testimoni {
+  padding: 40px 10%;
+  background: #f3e5f5;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.stats-list {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+}
+.stats-list li {
+  margin-bottom: 10px;
+}
+
+.testimoni blockquote {
+  background: #ede7f6;
+  padding: 20px;
+  border-left: 4px solid #7b1fa2;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.testimoni cite {
+  display: block;
+  margin-top: 10px;
+  text-align: right;
+  font-weight: bold;
+  color: #4a148c;
+}
