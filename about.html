@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tentang Saya</title>
+  <title>Tentang Saya - Web-My</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body class="about">
   <header class="navbar">
@@ -15,15 +16,43 @@
         <li><a href="about.html">Tentang</a></li>
         <li><a href="project.html">Proyek</a></li>
         <li><a href="contact.html">Kontak</a></li>
+        <li><button onclick="toggleDarkMode()">🌙</button></li>
       </ul>
     </nav>
   </header>
 
   <main class="main-content">
-    <h2>Tentang Saya</h2>
-    <p>Halo! Saya adalah developer web pemula yang suka belajar hal baru dan membangun website keren. Web ini dibuat untuk latihan dan portofolio.</p>
+    <section class="about scroll-fade">
+      <h2>👋 Tentang Saya</h2>
+      <p>Saya adalah seorang web developer asal Indonesia yang fokus membangun website statis dan dinamis menggunakan HTML, CSS, JavaScript, dan React.</p>
+      <p>Berpengalaman dalam membuat landing page, portofolio, blog pribadi, dan toko online. Saya sangat menikmati proses mengubah ide menjadi produk digital yang nyata 🚀</p>
+    </section>
+
+    <!-- 🔧 SKILL GRID -->
+    <section class="skills scroll-fade">
+      <h3>🧠 Keahlian Saya</h3>
+      <div class="skill-grid">
+        <span><i class="fab fa-html5"></i> HTML</span>
+        <span><i class="fab fa-css3-alt"></i> CSS</span>
+        <span><i class="fab fa-js"></i> JavaScript</span>
+        <span><i class="fab fa-react"></i> React</span>
+        <span><i class="fas fa-database"></i> Firebase</span>
+        <span><i class="fab fa-git-alt"></i> Git</span>
+      </div>
+    </section>
+
+    <!-- 🏆 PENGALAMAN -->
+    <section class="pengalaman scroll-fade">
+      <h3>🏆 Pengalaman & Sertifikat</h3>
+      <ul>
+        <li>📌 2023 — Membangun Web Toko Online statis (HTML/CSS)</li>
+        <li>📌 2024 — Lulus pelatihan Front-End Developer (DTS Kominfo)</li>
+        <li>📌 2025 — Membuat blog React dengan GitHub Pages</li>
+      </ul>
+    </section>
   </main>
 
   <footer><p>© 2025 Web-My</p></footer>
+  <script src="script.js"></script>
 </body>
-</html>...
+</html>
