@@ -496,6 +496,41 @@ body.contact textarea {
   transform: translateY(0);
 }
 
+.about, .skills, .pengalaman {
+  margin: 40px auto;
+  padding: 30px 10%;
+  background: #f3e5f5;
+  border-radius: 10px;
+}
+
+.skills .skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.skill-grid span {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.skill-grid i {
+  margin-right: 8px;
+  color: #7b1fa2;
+}
+
+.pengalaman ul {
+  list-style: none;
+  padding-left: 0;
+}
+.pengalaman li {
+  margin: 10px 0;
+}
+
 .stats, .testimoni {
   padding: 40px 10%;
   background: #f3e5f5;
